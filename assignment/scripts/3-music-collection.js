@@ -76,13 +76,17 @@ function addToCollection(title, artist, yearPublished) {
     return newObject;
 }
 
-addToCollection('DarkSideOfTheMoon', 'PinkFloyde', 1973);
+addToCollection('Dark Side Of The Moon', 'PinkFloyd', 1973);
 
-addToCollection('Stairway to Heaven', 'Led Zeppelin', 1971);
+addToCollection('Album IV', 'Led Zeppelin', 1971);
 
+addToCollection('Abbey Road', 'The Beatles', 1969)
 
+addToCollection('Hotel California', 'The Eagles', 1976)
 
+addToCollection('Back In Black', 'AC/DC', 1980)
 
+addToCollection('Appetite For Destruction', 'Guns N Roses', 1987)
 
 
 console.log(collection);
