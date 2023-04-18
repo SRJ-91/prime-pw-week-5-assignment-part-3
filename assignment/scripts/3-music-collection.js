@@ -65,18 +65,20 @@
 console.log('***** Music Collection *****')
 
 const collection = [];
-
 function addToCollection(title, artist, yearPublished) {
-    this.title = title;
-    this.artist = artist;
-    this.yearPublished = yearPublished;
-    collection.push(this.title)
-    return console.log('created', this.title)
+    let newObject = {
+        title: title,
+        artist: artist,
+        yearPublished: yearPublished
+    }
+    collection.push(newObject)
+    console.log('created', newObject)
+    return newObject;
 }
 
-const theDarkSideOfTheMoon = new addToCollection('The Dark Side of the Moon', 'Pink Floyd', 1973);
+addToCollection('DarkSideOfTheMoon', 'PinkFloyde', 1973);
 
-
+addToCollection('Stairway to Heaven', 'Led Zeppelin', 1971);
 
 
 
