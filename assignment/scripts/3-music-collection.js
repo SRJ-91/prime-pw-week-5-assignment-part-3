@@ -99,9 +99,21 @@ function showCollection(array) {
 
 showCollection(collection);
 
+function findByArtist(searchString) {
+  const results = [];
+  for (i = 0; i < collection.length; i++) {
+    if (searchString === collection[i].artist) {
+      results.push(collection[i])
+      return console.log('Matches found', results)
+    } else {
+      return console.log('No Match Found')
+    }
+  }
+}
 
+console.log('Testing "findByArtist function"')
 
-
+findByArtist('Pink Floyd')
 
 
 
